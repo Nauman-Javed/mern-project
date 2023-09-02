@@ -10,4 +10,4 @@ app.use("*", (req, res) => {
   res.send({ message: "invalid url" });
 });
 
-app.listen(PORT, () => console.log("Server running"));
+app.listen(PORT);
