@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Dashboard, Login, Register } from "./pages";
 import { Header } from "./components";
+import { ToastContainer } from "react-toastify";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
           </Routes>
         </div>
       </BrowserRouter>
+      <ToastContainer />
     </>
   );
 }

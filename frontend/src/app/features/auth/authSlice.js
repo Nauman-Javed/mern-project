@@ -4,7 +4,7 @@ import authService from "./authService";
 const user = JSON.parse(localStorage.getItem("user"));
 
 const initialState = {
-  user: user ? user : "null",
+  user: user ? user : null,
   isError: false,
   isSuccess: false,
   isLoading: false,
@@ -30,7 +30,7 @@ export const register = createAsyncThunk(
 
 export const authSlice = createSlice({
   name: "auth",
-  initialState: initialState,
+  initialState,
   reducers: {
     reset: (state) => {
       state.isLoading = false;
